@@ -1,0 +1,125 @@
+.home {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 80px;
+    height: 100vh;
+    position: relative;
+    z-index: 1;
+}
+
+.home-left {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+}
+
+.home-identity {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.home-name {
+    font-size: 3rem;
+    font-weight: bold;
+    color: white;
+    margin: 0;
+}
+
+.home-title {
+    color: white;
+    font-weight: 600;
+    font-size: 1.2rem;
+    margin: 0;
+}
+
+.home-desc {
+    color: #aaa;
+    font-size: 1rem;
+    margin: 0;
+}
+
+.home-bottom {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+}
+
+.home-stats {
+    display: flex;
+    gap: 40px;
+}
+
+.stat {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 4px;
+}
+
+.stat-icon {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: rgba(108, 143, 255, 0.1);
+    padding: 12px;
+    border-radius: 50%;
+    margin-bottom: 8px;
+    box-shadow: 0 4px 15px rgba(108, 143, 255, 0.1);
+    transition: transform 0.3s ease;
+}
+
+.stat:hover .stat-icon {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 20px rgba(108, 143, 255, 0.2);
+}
+
+.stat-number {
+    color: white;
+    font-size: 1.8rem;
+    font-weight: bold;
+}
+
+.stat-label {
+    color: #aaa;
+    font-size: 0.85rem;
+}
+
+.resume-btn {
+    display: inline-block;
+    text-decoration: none;
+    text-align: center;
+    width: fit-content;
+    padding: 16px 48px;
+    border-radius: 50px;
+    background: #6c3fff;
+    color: white;
+    font-weight: bold;
+    font-size: 1.25rem;
+    border: none;
+    cursor: pointer;
+    transition: background 0.2s;
+    margin-top: 30px;
+}
+
+.resume-btn:hover {
+    background: #5530dd;
+}
+
+.home-right {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-right: 10%;
+}
+
+.hero-photo {
+    width: 400px;
+    height: 400px;
+    border-radius: 50%;
+    object-fit: cover;
+    object-position: top;
+    border: 2px solid rgba(108, 143, 255, 0.3);
+    box-shadow: 0 0 60px rgba(108, 143, 255, 0.2);
+}

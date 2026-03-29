@@ -1,0 +1,19 @@
+.background1 {
+  background-image: url("./assets/background1.webp");
+  background-size: cover;
+  background-position: center;
+  height: 100vh;
+  position: relative; /* ← nécessaire pour contrôler le ::before */
+}
+
+.background1::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background-image:
+    linear-gradient(rgba(0, 180, 220, 0.08) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(0, 180, 220, 0.08) 1px, transparent 1px);
+  background-size: 60px 60px;
+  pointer-events: none;
+  z-index: 0; /* ← grille en dessous */
+}
