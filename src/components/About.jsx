@@ -14,7 +14,7 @@ export function About() {
                 <div className="about-me-label">About me</div>
                 <div className="about-subtitle">Computer Science & AI Engineering Student</div>
                 <h2 className="about-title">
-                    Othmane <span>El messaoudi</span>
+                    Othmane El messaoudi
                 </h2>
                 <div className="about-desc">
                     <p>

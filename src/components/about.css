@@ -78,10 +78,6 @@
     margin: 0;
 }
 
-.about-title span {
-    color: #6c8fff;
-}
-
 .about-desc {
     color: white;
     /* Made it white, but we can make paragraphs lighter */
@@ -132,5 +128,43 @@
     .about-photo {
         width: 300px;
         height: 300px;
+    }
+}
+
+/* Responsive Mobile Styles */
+@media (max-width: 768px) {
+    .about {
+        padding: 60px 20px;
+    }
+    .about-me-label {
+        font-size: 2.2rem;
+        margin-top: 0;
+        text-align: center;
+        justify-content: center;
+    }
+    .about-subtitle {
+        justify-content: center;
+        font-size: 1rem;
+    }
+    .about-subtitle::before {
+        display: none;
+    }
+    .about-title {
+        font-size: 2.5rem;
+        text-align: center;
+    }
+    .about-desc, .about-focus {
+        text-align: center;
+    }
+    .focus-tags {
+        justify-content: center;
+    }
+    .about-photo-container {
+        width: 250px;
+        height: 250px;
+    }
+    .about-photo {
+        width: 200px;
+        height: 200px;
     }
 }

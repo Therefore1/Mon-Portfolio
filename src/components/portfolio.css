@@ -285,3 +285,36 @@
     background-color: #1b1f23;
     box-shadow: 0 4px 15px rgba(36, 41, 46, 0.3);
 }
+
+/* Responsive Mobile Styles */
+@media (max-width: 768px) {
+    .portfolio-section {
+        padding: 60px 20px 80px 20px;
+    }
+    .portfolio-title {
+        font-size: 2.5rem;
+    }
+    .portfolio-subtitle {
+        font-size: 1.1rem;
+        padding: 0 10px;
+    }
+    .toggle-btn {
+        padding: 12px 25px;
+        font-size: 1rem;
+    }
+    .project-card {
+        padding: 20px;
+    }
+    .project-title {
+        font-size: 1.8rem;
+    }
+    .project-desc {
+        font-size: 0.95rem;
+    }
+    .skill-category-card {
+        padding: 20px;
+    }
+    .skill-category-title {
+        font-size: 1.3rem;
+    }
+}

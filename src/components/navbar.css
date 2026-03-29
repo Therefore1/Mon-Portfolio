@@ -128,3 +128,41 @@
 .navbar.navbar-light .contact-btn:hover {
   background: rgba(141, 166, 250, 0.15);
 }
+
+/* Responsive Mobile Styles */
+@media (max-width: 768px) {
+  .navbar {
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 10px 15px;
+    background: #000000;
+  }
+  .navbar.navbar-light {
+    background: #ecedfb;
+  }
+  .navbar-left {
+    font-size: 1.3rem;
+  }
+  .navbar-links {
+    position: static;
+    transform: none;
+    order: 3;
+    width: 100%;
+    margin-top: 15px;
+    gap: 15px;
+    justify-content: center;
+  }
+  .navbar-links li {
+    font-size: 1rem;
+  }
+  .navbar-right {
+    gap: 10px;
+  }
+  .navbar-icons {
+    gap: 10px;
+  }
+  .contact-btn {
+    padding: 6px 12px;
+    font-size: 0.85rem;
+  }
+}
