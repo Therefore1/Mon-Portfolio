@@ -47,7 +47,7 @@
 
 .about-me-label {
     color: white;
-    font-size: 3.2rem;
+    font-size: 3.1rem;
     font-weight: 800;
     margin-bottom: 15px;
     margin-top: -30px;
@@ -55,7 +55,7 @@
 
 .about-subtitle {
     color: #6c8fff;
-    font-size: 1.4rem;
+    font-size: 1.3rem;
     font-weight: 600;
     display: flex;
     align-items: center;
@@ -81,7 +81,7 @@
 .about-desc {
     color: white;
     /* Made it white, but we can make paragraphs lighter */
-    font-size: 1.2rem;
+    font-size: 1.15rem;
     line-height: 1.7;
 }
 
@@ -96,7 +96,7 @@
 
 .about-focus h3 {
     color: white;
-    font-size: 1.8rem;
+    font-size: 1.7rem;
     margin-bottom: 15px;
     font-weight: 700;
 }
@@ -109,7 +109,7 @@
 
 .focus-tag {
     color: #6c8fff;
-    font-size: 1.2rem;
+    font-size: 1.15rem;
     font-weight: 800;
 }
 
@@ -144,7 +144,7 @@
     }
     .about-subtitle {
         justify-content: center;
-        font-size: 1.15rem;
+        font-size: 1.1rem;
     }
     .about-subtitle::before {
         display: none;

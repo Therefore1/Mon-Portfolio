@@ -28,7 +28,7 @@
 }
 
 .contact-subtitle {
-    font-size: 1.35rem;
+    font-size: 1.25rem;
     color: #9292a0;
     max-width: 800px;
     margin: 0 auto;
@@ -92,10 +92,17 @@
     color: #dedede;
 }
 
+.contact-card > div {
+    min-width: 0;
+    flex: 1;
+}
+
 .contact-card p {
     margin: 0;
-    font-size: 1.1rem;
+    font-size: 1.05rem;
     color: #8da6fa;
+    word-break: break-word;
+    overflow-wrap: break-word;
 }
 
 /* Contact Form Container (Right Side) */
@@ -120,7 +127,7 @@
 }
 
 .form-group label {
-    font-size: 1.15rem;
+    font-size: 1.1rem;
     font-weight: 600;
     color: #dedede;
 }
@@ -132,7 +139,7 @@
     padding: 16px;
     border-radius: 10px;
     color: #ffffff;
-    font-size: 1.15rem;
+    font-size: 1.05rem;
     font-family: inherit;
     transition: border-color 0.3s ease, box-shadow 0.3s ease;
 }
@@ -150,7 +157,7 @@
     border: none;
     padding: 18px;
     border-radius: 10px;
-    font-size: 1.25rem;
+    font-size: 1.15rem;
     font-weight: 800;
     cursor: pointer;
     transition: all 0.3s ease;

@@ -21,7 +21,7 @@
 }
 
 .home-name {
-    font-size: 3.5rem;
+    font-size: 3.2rem;
     font-weight: bold;
     color: white;
     margin: 0;
@@ -30,13 +30,13 @@
 .home-title {
     color: white;
     font-weight: 600;
-    font-size: 1.5rem;
+    font-size: 1.3rem;
     margin: 0;
 }
 
 .home-desc {
     color: #aaa;
-    font-size: 1.2rem;
+    font-size: 1.15rem;
     margin: 0;
 }
 
@@ -83,7 +83,7 @@
 
 .stat-label {
     color: #aaa;
-    font-size: 1rem;
+    font-size: 0.95rem;
 }
 
 .resume-btn {
@@ -140,13 +140,13 @@
         gap: 20px;
     }
     .home-name {
-        font-size: 2.5rem;
+        font-size: 2.3rem;
     }
     .home-title {
-        font-size: 1.2rem;
+        font-size: 1.1rem;
     }
     .home-desc {
-        font-size: 1.1rem;
+        font-size: 1.05rem;
     }
     .home-stats {
         flex-wrap: wrap;
