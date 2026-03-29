@@ -2,16 +2,18 @@ import React, { useState } from 'react';
 import './portfolio.css';
 import EnsaGuideImg from '../assets/EnsaGuide.png';
 import AnomalyDetectionImg from '../assets/AnomalyDetection.png';
+import { useLanguage } from '../LanguageContext';
 
 const Portfolio = () => {
+    const { t } = useLanguage();
     const [activeTab, setActiveTab] = useState('projects');
 
     return (
         <section id="portfolio" className="portfolio-section">
             <div className="portfolio-header">
-                <h2 className="portfolio-title"><span className="highlight-text">My</span> Portfolio</h2>
+                <h2 className="portfolio-title">{t('portfolio.title')}</h2>
                 <p className="portfolio-subtitle">
-                    Exploring the intersection of web development, data science, and AI.
+                    {t('portfolio.subtitle')}
                 </p>
 
                 <div className="toggle-wrapper">
@@ -20,13 +22,13 @@ const Portfolio = () => {
                             className={`toggle-btn ${activeTab === 'projects' ? 'active' : ''}`}
                             onClick={() => setActiveTab('projects')}
                         >
-                            Projects
+                            {t('portfolio.tab.projects')}
                         </button>
                         <button
                             className={`toggle-btn ${activeTab === 'skills' ? 'active' : ''}`}
                             onClick={() => setActiveTab('skills')}
                         >
-                            Skills
+                            {t('portfolio.tab.skills')}
                         </button>
                     </div>
                 </div>
@@ -39,14 +41,14 @@ const Portfolio = () => {
                             <img src={EnsaGuideImg} alt="ENSA Guide" className="project-img" />
                         </div>
                         <div className="project-info">
-                            <span className="badge badge-academic">PROJET ACADÉMIQUE</span>
+                            <span className="badge badge-academic">{t('portfolio.badge.academic')}</span>
                             <h3 className="project-title">ENSA Guide</h3>
                             <p className="project-desc">
-                                ENSA Guide is a web application designed to help ENSA students explore available engineering fields.
+                                {t('portfolio.ensa.desc1')}
                                 <br /><br />
-                                It provides detailed insights into each program, including modules, semester structure, and career opportunities.
+                                {t('portfolio.ensa.desc2')}
                                 <br />
-                                The platform also features an orientation test that suggests the most suitable field based on user responses.
+                                {t('portfolio.ensa.desc3')}
                             </p>
 
                             <div className="project-tags">
@@ -63,7 +65,7 @@ const Portfolio = () => {
                                 rel="noreferrer"
                                 className="deploy-btn github-btn"
                             >
-                                Voir sur GitHub
+                                {t('portfolio.btn.github')}
                             </a>
                         </div>
                     </div>
@@ -73,14 +75,14 @@ const Portfolio = () => {
                             <img src={AnomalyDetectionImg} alt="Anomaly Detection" className="project-img" />
                         </div>
                         <div className="project-info">
-                            <span className="badge badge-personal">PROJET PERSONNEL (BINÔME)</span>
+                            <span className="badge badge-personal">{t('portfolio.badge.personal')}</span>
                             <h3 className="project-title">Anomaly Detection</h3>
                             <p className="project-desc">
-                                Anomaly Detection is a machine learning web application that identifies unusual patterns in data using the Isolation Forest algorithm.
+                                {t('portfolio.anomaly.desc1')}
                                 <br /><br />
-                                The system is built with a Flask backend and leverages pandas and scikit-learn for data processing and model prediction.
+                                {t('portfolio.anomaly.desc2')}
                                 <br />
-                                This project was developed in a team and deployed online.
+                                {t('portfolio.anomaly.desc3')}
                             </p>
 
                             <div className="project-tags">
@@ -101,7 +103,7 @@ const Portfolio = () => {
                                 rel="noreferrer"
                                 className="deploy-btn"
                             >
-                                Voir le déploiement
+                                {t('portfolio.btn.deploy')}
                             </a>
                         </div>
                     </div>

@@ -1,7 +1,9 @@
 import './about.css';
 import othmane from '../assets/Othmaaane.jpg';
+import { useLanguage } from '../LanguageContext';
 
 export function About() {
+    const { t } = useLanguage();
     return (
         <section className="about" id="about">
             <div className="about-left">
@@ -11,26 +13,23 @@ export function About() {
             </div>
 
             <div className="about-right">
-                <div className="about-me-label">About me</div>
-                <div className="about-subtitle">Computer Science & AI Engineering Student</div>
+                <div className="about-me-label">{t('about.label')}</div>
+                <div className="about-subtitle">{t('about.subtitle')}</div>
                 <h2 className="about-title">
                     Othmane El messaoudi
                 </h2>
                 <div className="about-desc">
-                    <p>
-                        I'm Othmane El messaoudi, a Computer Science & AI engineering student passionate about turning data into actionable insights. I enjoy collaborating, learning as I contribute, and bringing curiosity, discipline, and reliability to every project. From building predictive models and dashboards to developing real-time AI applications, I focus on creating work that addresses real-world challenges.
-                    </p>
-                    <p>
-                        I'm currently seeking summer internships or collaborative projects where I can grow, apply my skills, and make a tangible impact.
-                    </p>
+                    <p>{t('about.desc1')}</p>
+                    <p>{t('about.desc2')}</p>
+                    <p>{t('about.desc3')}</p>
                 </div>
 
                 <div className="about-focus">
-                    <h3>What I Focus On:</h3>
+                    <h3>{t('about.focus')}</h3>
                     <div className="focus-tags">
-                        <span className="focus-tag">Web Development</span>
-                        <span className="focus-tag">Machine Learning</span>
-                        <span className="focus-tag">Data Science</span>
+                        <span className="focus-tag">{t('about.focus.web')}</span>
+                        <span className="focus-tag">{t('about.focus.ml')}</span>
+                        <span className="focus-tag">{t('about.focus.ds')}</span>
                     </div>
                 </div>
             </div>

@@ -1,4 +1,5 @@
 import { useState, useEffect } from 'react';
+import { useLanguage } from '../LanguageContext';
 import './navbar.css';
 import githubIcon from '../assets/github-ico.svg';
 import linkedinIcon from '../assets/linkedin-icon.svg';
@@ -7,6 +8,7 @@ import mailIcon from '../assets/email-svgrepo-com.svg';
 export function Navbar() {
     const [activeSection, setActiveSection] = useState('home');
     const [isLightNavbar, setIsLightNavbar] = useState(false);
+    const { t, language, setLanguage } = useLanguage();
 
     useEffect(() => {
         const handleScroll = () => {
@@ -59,9 +61,9 @@ export function Navbar() {
             <span className="navbar-left">Othmane<span>.</span></span>
 
             <ul className="navbar-links">
-                <li className={activeSection === 'home' ? 'active' : ''}><a href="#" style={{ color: 'inherit', textDecoration: 'none' }}>Home</a></li>
-                <li className={activeSection === 'about' ? 'active' : ''}><a href="#about" style={{ color: 'inherit', textDecoration: 'none' }}>About</a></li>
-                <li className={activeSection === 'portfolio' ? 'active' : ''}><a href="#portfolio" style={{ color: 'inherit', textDecoration: 'none' }}>Portfolio</a></li>
+                <li className={activeSection === 'home' ? 'active' : ''}><a href="#" style={{ color: 'inherit', textDecoration: 'none' }}>{t('nav.home')}</a></li>
+                <li className={activeSection === 'about' ? 'active' : ''}><a href="#about" style={{ color: 'inherit', textDecoration: 'none' }}>{t('nav.about')}</a></li>
+                <li className={activeSection === 'portfolio' ? 'active' : ''}><a href="#portfolio" style={{ color: 'inherit', textDecoration: 'none' }}>{t('nav.portfolio')}</a></li>
             </ul>
 
             <div className="navbar-right">
@@ -77,6 +79,12 @@ export function Navbar() {
                     </a>
                 </div>
 
+                <div style={{color: isLightNavbar ? '#333' : '#fff', display: 'flex', gap: '10px', cursor: 'pointer', fontWeight: 'bold', alignItems: 'center', fontSize: '1.2rem'}}>
+                    <span onClick={() => setLanguage('fr')} style={{ opacity: language === 'fr' ? 1 : 0.5, transition: 'opacity 0.2s' }}>FR</span>
+                    <span style={{ opacity: 0.3 }}>|</span>
+                    <span onClick={() => setLanguage('en')} style={{ opacity: language === 'en' ? 1 : 0.5, transition: 'opacity 0.2s' }}>EN</span>
+                </div>
+
                 <span 
                     className="contact-btn" 
                     onClick={() => {
@@ -87,7 +95,7 @@ export function Navbar() {
                     }}
                     style={{ cursor: 'pointer' }}
                 >
-                    Contact me
+                    {t('nav.contact_btn')}
                 </span>
             </div>
         </nav>

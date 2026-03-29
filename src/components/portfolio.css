@@ -32,7 +32,7 @@
 }
 
 .portfolio-subtitle {
-    font-size: 1.4rem;
+    font-size: 1.5rem;
     color: #5d606f;
     max-width: 1000px;
     margin: 0 auto 50px auto;
@@ -167,7 +167,7 @@
 
 .project-desc {
     color: #5d606f;
-    font-size: 1.05rem;
+    font-size: 1.2rem;
     line-height: 1.7;
     margin: 0 0 24px 0;
     flex: 1;
@@ -262,7 +262,7 @@
     color: #6350e4;
     padding: 10px 20px;
     border-radius: 30px;
-    font-size: 1rem;
+    font-size: 1.15rem;
     font-weight: 700;
     transition: all 0.3s ease;
     cursor: default;
@@ -295,7 +295,7 @@
         font-size: 2.5rem;
     }
     .portfolio-subtitle {
-        font-size: 1.1rem;
+        font-size: 1.25rem;
         padding: 0 10px;
     }
     .toggle-btn {
@@ -309,7 +309,7 @@
         font-size: 1.8rem;
     }
     .project-desc {
-        font-size: 0.95rem;
+        font-size: 1.1rem;
     }
     .skill-category-card {
         padding: 20px;

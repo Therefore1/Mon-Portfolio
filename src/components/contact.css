@@ -28,7 +28,7 @@
 }
 
 .contact-subtitle {
-    font-size: 1.2rem;
+    font-size: 1.35rem;
     color: #9292a0;
     max-width: 800px;
     margin: 0 auto;
@@ -94,7 +94,7 @@
 
 .contact-card p {
     margin: 0;
-    font-size: 0.95rem;
+    font-size: 1.1rem;
     color: #8da6fa;
 }
 
@@ -120,7 +120,7 @@
 }
 
 .form-group label {
-    font-size: 0.95rem;
+    font-size: 1.15rem;
     font-weight: 600;
     color: #dedede;
 }
@@ -132,7 +132,7 @@
     padding: 16px;
     border-radius: 10px;
     color: #ffffff;
-    font-size: 1rem;
+    font-size: 1.15rem;
     font-family: inherit;
     transition: border-color 0.3s ease, box-shadow 0.3s ease;
 }
@@ -150,7 +150,7 @@
     border: none;
     padding: 18px;
     border-radius: 10px;
-    font-size: 1.1rem;
+    font-size: 1.25rem;
     font-weight: 800;
     cursor: pointer;
     transition: all 0.3s ease;

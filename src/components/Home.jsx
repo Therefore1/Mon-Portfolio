@@ -1,14 +1,16 @@
 import './home.css';
 import othmane from '../assets/Othmaaane.jpg';
+import { useLanguage } from '../LanguageContext';
 
 export function Home() {
+    const { t } = useLanguage();
     return (
         <section className="home">
             <div className="home-left">
                 <h1 className="home-name">Othmane El messaoudi</h1>
-                <p className="home-title">Computer Science & AI Engineering Student</p>
+                <p className="home-title">{t('home.title')}</p>
                 <p className="home-desc">
-                    Turning data into insights. Building AI solutions that make an impact.
+                    {t('home.subtitle')}
                 </p>
 
                 <div className="home-stats">
@@ -20,7 +22,7 @@ export function Home() {
                             </svg>
                         </div>
                         <span className="stat-number">2+</span>
-                        <span className="stat-label">Projects</span>
+                        <span className="stat-label">{t('home.projects')}</span>
                     </div>
                     <div className="stat">
                         <div className="stat-icon">
@@ -29,12 +31,12 @@ export function Home() {
                             </svg>
                         </div>
                         <span className="stat-number">10+</span>
-                        <span className="stat-label">Skills</span>
+                        <span className="stat-label">{t('home.skills')}</span>
                     </div>
                 </div>
 
                 <a href="/resume.pdf" download="Othmane_El_messaoudi_Resume.pdf" className="resume-btn">
-                    View Resume
+                    {t('home.resume')}
                 </a>
             </div>
 
