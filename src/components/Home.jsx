@@ -35,7 +35,7 @@ export function Home() {
                     </div>
                 </div>
 
-                <a href="/resume.pdf" download="Othmane_El_messaoudi_Resume.pdf" className="resume-btn">
+                <a href="/Othmane El messaoudi.pdf" download="Othmane_El_messaoudi_CV.pdf" className="resume-btn">
                     {t('home.resume')}
                 </a>
             </div>
